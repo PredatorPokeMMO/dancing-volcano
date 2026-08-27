@@ -1,16 +1,170 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', system-ui, sans-serif;
     background: #000;
     color: #e8e8e8;
-    padding: 32px 12px;
+    padding: 0 12px 48px;
     line-height: 1.45;
+}
+
+a { color: inherit; }
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.92);
+    border-bottom: 2px solid #f4ea2a;
+    padding: 12px 14px 10px;
+    backdrop-filter: blur(8px);
+}
+
+.site-header-inner {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.site-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f4ea2a;
+    letter-spacing: 0.3px;
+}
+
+.site-sub {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 2px;
+}
+
+.jump-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.jump-nav a {
+    font-size: 11px;
+    font-weight: 600;
+    color: #111;
+    background: #f4ea2a;
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 999px;
+}
+
+.jump-nav a:hover {
+    background: #fff;
 }
 
 .wrap {
     max-width: 520px;
-    margin: 0 auto;
+    margin: 18px auto 0;
+}
+
+.team-bar {
+    border: 2px solid #f4ea2a;
+    border-radius: 8px;
+    background: #0d0d0d;
+    padding: 12px 10px 10px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.team-bar h2 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f4ea2a;
+    margin-bottom: 8px;
+}
+
+.team-sprites {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+}
+
+.team-sprites .poke {
+    min-width: 88px;
+}
+
+.team-sprites .poke img {
+    height: 56px;
+}
+
+.team-sprites .poke .name {
+    font-size: 13px;
+}
+
+.moveset {
+    list-style: none;
+    margin-top: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.35;
+    text-align: left;
+}
+
+.moveset li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.moveset .ppmax {
+    height: 14px !important;
+    width: 14px;
+    image-rendering: pixelated;
+}
+
+.region {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #f4ea2a;
+    margin: 26px 0 10px;
+    padding-left: 2px;
+}
+
+.region:first-of-type {
+    margin-top: 6px;
+}
+
+.item-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 18px 0;
+    padding: 10px 14px;
+    border: 2px solid #f4ea2a;
+    border-radius: 8px;
+    background: #1a1200;
+    font-size: 17px;
+    font-weight: 700;
+    color: #f4ea2a;
+    text-align: center;
+}
+
+.item-banner img {
+    height: 42px;
+    image-rendering: pixelated;
+}
+
+.item-banner img.item {
+    height: 32px;
+    image-rendering: pixelated;
 }
 
 .city {
@@ -18,10 +172,11 @@ body {
     border-radius: 8px;
     overflow: hidden;
     background: #0d0d0d;
+    scroll-margin-top: 86px;
 }
 
 .city + .city {
-    margin-top: 28px;
+    margin-top: 22px;
 }
 
 /* Header */
@@ -35,6 +190,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .header .num { color: #f4ea2a; margin-right: 6px; }
@@ -53,6 +209,7 @@ body {
 
 .map-row .map {
     width: 200px;
+    max-width: 58%;
     border-radius: 3px;
 }
 
@@ -109,7 +266,7 @@ body {
 
 /* Conditions */
 .condition {
-    padding: 16px 16px;
+    padding: 16px;
     border-bottom: 1px solid #1a1a1a;
     background: #0f0f0f;
 }
@@ -121,7 +278,8 @@ body {
 .cond-top {
     display: flex;
     align-items: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
     margin-bottom: 8px;
     font-size: 17px;
     font-weight: 700;
@@ -139,23 +297,20 @@ body {
     padding-left: 2px;
 }
 
-.cond-body div {
+.cond-body > div {
     margin: 4px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 4px;
 }
 
-/* Switch line stays on one line */
-.cond-body .switch {
+/* Switch / send-out line stays on one line */
+.switch {
     display: inline-flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 6px;
-    white-space: nowrap;
+    white-space: normal;
 }
 
-.cond-body .switch img {
+.switch img {
     height: 28px;
     image-rendering: pixelated;
     vertical-align: middle;
@@ -172,3 +327,27 @@ body {
 .rock     { color: #c9a66b; }
 .fighting { color: #d67873; }
 .heatran  { color: #ff5a4a; }
+.ice      { color: #7de0ff; }
+.electric { color: #f6e05e; }
+
+.footer {
+    max-width: 520px;
+    margin: 28px auto 0;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
+
+.footer a {
+    color: #f4ea2a;
+    text-decoration: none;
+}
+
+@media (max-width: 520px) {
+    .header { font-size: 17px; }
+    .header .leader-name { font-size: 14px; }
+    .default-moves { font-size: 17px; }
+    .cond-top, .cond-body { font-size: 15px; }
+    .poke img { height: 68px; }
+    .map-row .map { width: 160px; }
+}
