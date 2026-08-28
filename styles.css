@@ -84,6 +84,44 @@ a { color: inherit; }
     color: #f4ea2a;
     margin-bottom: 8px;
 }
+.ocarina {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #333;
+    text-align: left;
+}
+
+.ocarina-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #f4ea2a;
+    margin-bottom: 8px;
+}
+
+.ocarina-title img {
+    height: 28px;
+    image-rendering: pixelated;
+}
+
+.ocarina-list {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.55;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.ocarina-list li {
+    color: #ddd;
+}
+
+.flying  { color: #8ec8f0; }
+.psychic { color: #f080c8; }
 
 .team-sprites {
     display: grid;
