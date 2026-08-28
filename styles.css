@@ -166,6 +166,12 @@ a { color: inherit; }
     image-rendering: pixelated;
 }
 
+.item-banner.heal {
+    border-color: #3a9a3a;
+    background: #0d1a0d;
+    color: #6fd16f;
+}
+
 .city {
     border: 2px solid #f4ea2a;
     border-radius: 8px;
