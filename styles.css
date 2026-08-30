@@ -164,6 +164,17 @@ a { color: inherit; }
     flex-shrink: 0;
 }
 
+.moveset .item-line {
+    margin-top: 4px;
+    color: #f4ea2a;
+}
+
+.moveset .held-item {
+    height: 18px !important;
+    width: 18px;
+    image-rendering: pixelated;
+}
+
 .region {
     font-size: 13px;
     font-weight: 700;
