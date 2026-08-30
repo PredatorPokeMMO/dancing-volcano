@@ -117,7 +117,18 @@ a { color: inherit; }
 }
 
 .ocarina-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: #ddd;
+}
+
+.ocarina-list li img {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    flex-shrink: 0;
 }
 
 .flying  { color: #8ec8f0; }
@@ -203,6 +214,7 @@ a { color: inherit; }
     font-weight: 700;
     color: #f4ea2a;
     text-align: center;
+    scroll-margin-top: 86px;
 }
 
 .item-banner img {
