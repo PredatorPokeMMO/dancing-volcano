@@ -399,6 +399,19 @@ a { color: inherit; }
     vertical-align: middle;
 }
 
+.heal-note {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.heal-note img {
+    height: 28px;
+    image-rendering: pixelated;
+}
+
 /* Type colors */
 .fire     { color: #ff6a3a; }
 .fairy    { color: #ff9ec8; }
