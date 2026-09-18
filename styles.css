@@ -175,6 +175,11 @@ a { color: inherit; }
     flex-shrink: 0;
 }
 
+.moveset .evs {
+    margin-top: 2px;
+    font-size: 11px;
+}
+
 .moveset .item-line {
     margin-top: 4px;
     color: #f4ea2a;
