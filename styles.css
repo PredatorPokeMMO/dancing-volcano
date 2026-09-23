@@ -238,6 +238,12 @@ a { color: inherit; }
     color: #6fd16f;
 }
 
+.item-banner.disconnect {
+    border-color: #777;
+    background: #1a1a1a;
+    color: #c0c0c0;
+}
+
 .item-banner.pop {
     border-color: #3d8fd9;
     background: #0b1828;
