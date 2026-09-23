@@ -17,6 +17,7 @@
         <div class="site-header-inner">
             <div class="site-title">Dancing Volcano</div>
             <nav class="jump-nav">
+                <a href="#guide">Guide</a>
                 <a href="#sunyshore">Sinnoh</a>
                 <a href="#rustboro">Hoenn</a>
                 <a href="#blackthorn">Johto</a>
@@ -142,6 +143,96 @@
             </ul>
         </div>
     </div>
+    <div class="region" id="guide">Guide</div>
+    <div class="guide">
+        <div class="guide-block">
+            <h3>Conditions</h3>
+            <div class="pattern">
+                <div class="pattern-name fire">If vs [Pokémon]</div>
+                <div class="pattern-body">Look at their lead <strong>before you click</strong>. If that species is out, follow the condition. If they do not have it out, skip the condition.</div>
+            </div>
+            <div class="pattern">
+                <div class="pattern-name heatran">ANYTIME vs [Pokémon]</div>
+                <div class="pattern-body">This is not only the lead. If that species is out <span class="heatran">ANYTIME</span>, switch to this condition immediately.</div>
+            </div>
+        </div>
+
+        <div class="guide-block">
+            <h3>How to read a Gym</h3>
+            <p>Read top to bottom. Stop at the condition that matches what is on their field. Example: Eterna.</p>
+
+            <div class="read-wrap">
+                <div class="read-row">
+                    <div class="callout">1. Gym</div>
+                    <div class="header read-fake">
+                        <div><span class="num">2.</span> Eterna City</div>
+                        <div class="leader-name">Gardenia</div>
+                    </div>
+                </div>
+                <div class="read-note">City and leader. Map + sprite.</div>
+
+                <div class="read-row">
+                    <div class="callout">2. Lead</div>
+                    <div class="lead read-fake">
+                        <div class="leads">
+                            <div class="poke">
+                                <img src="https://play.pokemonshowdown.com/sprites/gen5ani/typhlosion.gif">
+                                <div class="name fire">Typhlosion</div>
+                            </div>
+                            <div class="poke">
+                                <img src="https://play.pokemonshowdown.com/sprites/gen5ani/meloetta.gif">
+                                <div class="name fairy">Meloetta</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="read-note">Send these two first.</div>
+
+                <div class="read-row">
+                    <div class="callout">3. Default</div>
+                    <div class="lead read-fake" style="padding-top:0">
+                        <div class="default-moves">
+                            <span class="fire">Incinerate</span> + <span class="fairy">Hyper Voice</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="read-note">Click this <strong>only if no condition below matches</strong>.</div>
+
+                <div class="read-row">
+                    <div class="callout anytime">4. If vs</div>
+                    <div class="condition read-fake">
+                        <div class="cond-top">
+                            If vs
+                            <img src="https://play.pokemonshowdown.com/sprites/gen5ani/ninetales.gif">
+                            Ninetales
+                        </div>
+                        <div class="cond-body">
+                            <div><span class="fire">Incinerate</span> + <span class="fairy">Hyper Voice</span></div>
+                            <div class="switch"><span class="fire">Incinerate</span> + <span class="fairy">Meloetta</span> → <img src="https://play.pokemonshowdown.com/sprites/gen5ani/weezing.gif"> <span class="poison">Weezing</span></div>
+                            <div><span class="fire">Incinerate</span> + <span class="poison">Assurance</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="read-note">Their Ninetales is already out let's follow this  instead of default. Line 1 is the turn. Line 2 swaps Meloetta to Weezing. Line 3 is the final turn.</div>
+
+                <div class="read-row">
+                    <div class="callout warn">5. ANYTIME</div>
+                    <div class="condition read-fake">
+                        <div class="cond-top">
+                            ANYTIME vs
+                            <img src="https://play.pokemonshowdown.com/sprites/gen5ani/aerodactyl.gif">
+                            Aerodactyl
+                        </div>
+                        <div class="cond-body">
+                            <div>Follow instructions whenever it appears — lead or mid-fight.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="read-note">Usually an X Special or X Speed. If no moves are specified after the item is consumed then go back to default moves.</div>
+            </div>
+        </div>
+    </div>
+
     <div class="region">Sinnoh</div>
     <div class="item-banner pop" id="sunyshore">
         <img class="item" src="https://images.shoutwiki.com/pokemmo/8/87/Bag_Lucky_Egg.png" alt="Lucky Egg">
@@ -883,7 +974,7 @@
         </div>
         <div class="condition">
             <div class="cond-top">
-                Anytime vs
+                ANYTIME vs
                 <img src="https://play.pokemonshowdown.com/sprites/gen5ani/aerodactyl.gif">
                 Aerodactyl
             </div>
@@ -1450,7 +1541,7 @@
         </div>
         <div class="condition">
             <div class="cond-top">
-                Anytime vs
+                ANYTIME vs
                 <img src="https://play.pokemonshowdown.com/sprites/gen5ani/jumpluff.gif">
                 Jumpluff
             </div>
@@ -1465,7 +1556,7 @@
         </div>
         <div class="condition">
             <div class="cond-top">
-                Anytime vs
+                ANYTIME vs
                 <img src="https://play.pokemonshowdown.com/sprites/gen5ani/drifblim.gif">
                 Drifblim OR
                 <img src="https://play.pokemonshowdown.com/sprites/gen5ani/mismagius.gif">
